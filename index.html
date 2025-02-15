@@ -68,13 +68,14 @@
         <iframe id="videoFrame" src="" allowfullscreen></iframe>
     </div>
 
-    <script>
-        function loadPlaylist() {
-            let selectedPlaylist = document.getElementById("playlistSelect").value;
-            if (selectedPlaylist) {
-                document.getElementById("videoFrame").src = selectedPlaylist;
-            }
+  <script>
+    function loadPlaylist() {
+        let selectedPlaylist = document.getElementById("playlistSelect").value;
+        if (selectedPlaylist) {
+            document.getElementById("videoFrame").src = selectedPlaylist + "&modestbranding=1&rel=0";
         }
-    </script>
+    }
+</script>
+
 </body>
 </html>
